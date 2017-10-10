@@ -1,0 +1,16 @@
+20171010
+repaso de operaciones de git
+configuración inicial:
+git config --global user.name dwakeherrera
+git config --global user.email deivid.wgh@gmail.com
+git config --global push.default simple
+
+clonado:
+git close https://github.com/dwakeherrera/ed.git
+
+nueva versión:
+git add diario.txt (marca el fichero diario.txt)
+git commit -m "Resumen de la nueva versión" (incluye los marcados)
+
+publicación en remoto:
+git push (pide user/pw)
