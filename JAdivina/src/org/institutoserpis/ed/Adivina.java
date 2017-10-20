@@ -1,28 +1,31 @@
 package org.institutoserpis.ed;
 
+import java.util.Random;
 import java.util.Scanner;
-import java.util.concurrent.ThreadLocalRandom;
 
 public class Adivina {
 
 	public static void main(String[] args) {
-        int rand = ThreadLocalRandom.current().nextInt(1,1000);
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Escribe un número del 1 al 1000: ");
-		for (int cont = 1; cont<=1000; cont++) { 
-			System.out.println("Intento " + cont);
-			System.out.print("Escribe un numero: ");
-			String Intento = scanner.nextLine();
-			int intento = Integer.parseInt(Intento);
-			if (intento < rand) {
-				System.out.println("El número es más grande.");
-			} else if (intento > rand) {
-				System.out.println("El número es más pequeño.");
-			} else {
-				System.out.println("Has acertado.");
-				break;
-			}
-		}
-		System.out.print("El número era el " + rand);
+        Random random = new Random();
+        int numeroAleatorio = random.nextInt(1000) + 1;
+
+        System.out.println("Número aleatorio=" + numeroAleatorio);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Adivina el número (entre 1 y 1000): ");
+
+        String numero = scanner.nextLine();
+        int numeroIntroducido = Integer.parseInt(numero);
+
+        while (numeroIntroducido != numeroAleatorio) {
+        	if (numeroAleatorio < numeroIntroducido)
+        		System.out.print("Es menor que ese. Vuelve a intentarlo: ");
+        	else
+        		System.out.print("Es mayor que ese. Vuelve a intentarlo: ");
+        	numero = scanner.nextLine();
+        	numeroIntroducido = Integer.parseInt(numero);
+        }
+        System.out.println("Enhorabuena. Has acertado.");
 	}
+
 }
