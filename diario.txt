@@ -14,3 +14,8 @@ git commit -m "Resumen de la nueva versión" (incluye los marcados)
 
 publicación en remoto:
 git push (pide user/pw)
+
+20171121
+instalación monodevelop:
+sudo apt update
+sudo apt install monodevelop
