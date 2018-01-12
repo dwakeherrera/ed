@@ -1,0 +1,6 @@
+/home/davher/ed/CBingo/CBingo/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/davher/ed/CBingo/CBingo/obj/x86/Debug/CBingo.gtk-gui.gui.stetic
+/home/davher/ed/CBingo/CBingo/bin/Debug/CBingo.exe.mdb
+/home/davher/ed/CBingo/CBingo/bin/Debug/CBingo.exe
+/home/davher/ed/CBingo/CBingo/obj/x86/Debug/CBingo.exe
+/home/davher/ed/CBingo/CBingo/obj/x86/Debug/CBingo.exe.mdb
