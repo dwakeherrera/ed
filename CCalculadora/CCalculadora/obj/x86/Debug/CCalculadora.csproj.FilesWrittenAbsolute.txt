@@ -1,0 +1,2 @@
+/home/davher/ed/CCalculadora/CCalculadora/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/davher/ed/CCalculadora/CCalculadora/obj/x86/Debug/CCalculadora.gtk-gui.gui.stetic

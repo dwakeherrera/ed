@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="CCalculadora/CCalculadora.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CCalculadora/MainWindow.cs">
+    <Files>
+      <File FileName="CCalculadora/MainWindow.cs" Line="1" Column="1" />
+      <File FileName="CCalculadora/Program.cs" Line="1" Column="1" />
+      <File FileName="CCalculadora/Calculadora.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
