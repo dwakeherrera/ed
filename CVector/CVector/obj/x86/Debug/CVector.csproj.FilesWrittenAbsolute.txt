@@ -1,0 +1,5 @@
+/home/davher/ed/CVector/CVector/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/davher/ed/CVector/CVector/bin/Debug/CVector.exe.mdb
+/home/davher/ed/CVector/CVector/bin/Debug/CVector.exe
+/home/davher/ed/CVector/CVector/obj/x86/Debug/CVector.exe
+/home/davher/ed/CVector/CVector/obj/x86/Debug/CVector.exe.mdb
