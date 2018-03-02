@@ -23,5 +23,10 @@ sudo apt install monodevelop
 20180119
 Instalación en Virtual Box de ubuntu 16.04.3 desktop.
 Inicio de instalación de Android Studio:
-librerías (ver instalación y emulación con aceleración hardware en la guía de usuario)
-apt install lib32z1 lib32ncurses5 lib32stdc++6 qemu-kvm libvirt-bin
+ Requisitos previos:
+  ·librerías (ver instalación y emulación con aceleración hardware en la guía de usuario):
+   apt install lib32z1 lib32ncurses5 lib32stdc++6 qemu-kvm libvirt-bin
+ Instalación (ver instalación en guía de usuario):
+ · descomprimir el .zip
+ · en el terminal, ir a android-studio/bin y ejecutar ./studio.sh
+   (esto realizará la descarga e instalación del Android/Sdk)
