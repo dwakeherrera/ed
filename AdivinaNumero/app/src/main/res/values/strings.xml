@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Adivina el número</string>
+    <string name="texto_cargando">Cargando...</string>
+    <string name="texto_comprobar">COMPROBAR</string>
+    <string name="texto_enhorabuena">¡Enhorabuena! Lo has adivinado en</string>
+    <string name="texto_intentos">intentos</string>
+</resources>

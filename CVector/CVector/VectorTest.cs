@@ -18,9 +18,26 @@ namespace CVector
 
 		[Test]
 		public void IndexMin() {
-			int[] v = {12, 9, 15, 7, 13};
-			int indexMin = Vector.IndexMin (v, 4);
-			Assert.AreEqual (4, indexMin);
+			int[] v = {12, 7, 15, 9, 13};
+			Assert.AreEqual (4, Vector.IndexMin(v, 4));
+			Assert.AreEqual (3, Vector.IndexMin(v, 2));
+			Assert.AreEqual (0, Vector.IndexMin(v, 0));
+
+			Assert.AreEqual (0, Vector.IndexMin(v, 5));
+		}
+
+		[Test]
+		[ExpectedException(typeof(System.IndexOutOfRangeException))]
+		int[] v = {12, 7, 15, 9, 13};
+		public void IndexMinBadInitialIndex() {
+			Assert.AreEqual (0, Vector.IndexMin(v, -1));
+		}
+
+		[Test]
+		[ExpectedException(typeof(System.IndexOutOfRangeException))]
+		public void IndexMinBadInitialIndex() {
+			int[] v = {12, 7, 15, 9, 13};
+			Assert.AreEqual (0, Vector.IndexMin(v, 5));
 		}
 	}
 }

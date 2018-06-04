@@ -3,88 +3,66 @@ package org.institutoserpis.ed;
 public class Vector {
 
 	public static void main(String[] args) {
-		int [] v = new int[] {9, 15, 7, 12, 6};
+		int[] v = new int[] {9, 15, 7, 12, 6};
 
-		for (int index = 0; index < 5; index++)
-			System.out.printf("v[%s]=%s\n", index, v[index]);
+				for (int index=0; index < 5; index++)
+					System.out.printf("v[%s]=%s ", index, v[index]);
+				System.out.println();
 
-		int value = 33;
+				int value = 6;
 
-		int position = index0f(v, value);
-		System.out.println("position=" + position);
-		int min = min(v);
-		System.out.println("min=" + min);
+				int position = indexOf(v, value);
+				System.out.println("position=" + position);
+				int min = min(v);
+				System.out.println("min=" + min);
+			}
 
-		int minPosition = index0fMin(v);
-		System.out.println("min position: " + minPosition);
+			public static int indexOf(int[] v, int value) {
+				int index = 0;
+				while (index < v.length && v[index] != value)
+					index++;
+				return index < v.length ? index : -1;
+			}
 
-		selectionSort(v);
-	}
+			public static int min(int[] v) {
+		//		int min = v[0];
+		//		for (int index = 1; index < v.length; index++)
+		//			if (v[index] < min)
+		//				min = v[index];
+		//		return min;
+				int min = v[0];
+				for (int item : v)
+					if (item < min)
+						min = item;
+				return min;
+			}
 
-	public static int index0f(int[] v, int value) {
-//		int index = 0;
-//		while (index < v.length && v[index] != value) //0j0 con el orden de la condición
-//			index++;
-//		if (index == v.length)
-//			return -1;
-//		return index;
-//		---------método wirtz---------
-//		for (int index = 0; index < v.length; index++)
-//			if (v[index] == value)
-//				return index;
-		int index = 0;
-		while (index < v.length && v[index] != value)
-			index++;
-		return index < v.length ? index : -1;
-	}
+			public static int indexOfMin(int[] v) {
+				int indexOfMin = 0;
+				for (int index = 1; index < v.length; index++)
+					if (v[index] < v[indexOfMin] )
+						indexOfMin = index;	
+				return indexOfMin;
+			}
 
-	public static int min(int[] v) {
-		int min = v[0];
-//		for (int index = 1; index < v.length; index += 1)
-//			if (min > v[index])
-//				min = v[index];
-//		return min;
-		for (int item : v)
-			if (item < min)
-				min = item;
-		return min; //nuevo for
-	}
+			public static int sum(int[] v) {
+				int sum = 0;
+		//		for (int index = 0; index < v.length; index++)
+		//			sum = sum + v[index];
+				for (int item : v)
+					sum = sum + item;
+				return sum;
+		}
 
-	public static int sum(int[] v) {
-		int suma = 0;
-
-//		for (int index = 0; index < v.length; index++)
-//			suma = suma + v[index];
-		for (int item : v)
-			suma = suma + item;
-		return suma;
-	}
-
-	public static int index0fMin(int[] v) {
-		int index0fMin = 0;
-
-		for (int index = 0; index < v.length; index++)
-			if (v[index] < v[index0fMin])
-				index0fMin = index;
-		return index0fMin;
-	}
-
-	public static void selectionSort(int[] v) {
-		int selectedIndex, index0fmin, aux;
-		int n = v.length;
-
-		for (int index = 0; index < n; index++) {
-			index0fmin = index;
-				for (selectedIndex = index + 1; selectedIndex < n; selectedIndex++)
-					if (v[selectedIndex] < v[index0fmin])
-	                	  index0fmin = selectedIndex;
-				if (index0fmin != index) {
-	            	aux = v[index];
-	            	v[index] = v[index0fmin];
-	            	v[index0fmin] = aux;
-	            }
-	      }
-	      for (int index = 0; index < n; index++)
-	    	  System.out.print(v[index] + " ");
-	}
+		public static int binarySearch(int[] v, int value) {
+	        int left = 0;
+	        int right = v.length - 1;
+	        while (left <= right) {
+	            int mid = left + (right - left) / 2;
+	            if (value < v[mid]) right = mid - 1;
+	            else if (value > v[mid]) left = mid + 1;
+	            else return mid;
+	        }
+	        return -1;
+		}
 }
